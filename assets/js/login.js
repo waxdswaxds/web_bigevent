@@ -42,7 +42,7 @@ $(function() {
             $.post('/api/reguser', data,
                 function(res) {
                     if (res.status !== 0) {
-                        return layer.msg(res.message);;
+                        return layer.msg('注册失败');;
                     }
                     layer.msg('注册成功');
                     $('#link_login').click()
